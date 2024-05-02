@@ -62,8 +62,8 @@ for pizza in friend_pizzas:
     print(pizza)
 
 # 4-12. More Loops
-fruits: list['str'] = ['apple', 'banana', 'orange', 'grape']
-vegetables: list['str'] = ['salad', 'spinach', 'potato', 'carrot']
+fruits: list[str] = ['apple', 'banana', 'orange', 'grape']
+vegetables: list[str] = ['salad', 'spinach', 'potato', 'carrot']
 print("Fruits:")
 for fruit in fruits:
     print(fruit)
