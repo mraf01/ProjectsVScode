@@ -100,7 +100,7 @@ items.remove("Italy")
 print(items)
 
 # 6-1. Person
-person: dict[str, str or int] = {"first_name": "Mario", "last_name": "Rossi", "age": 30, "city": "Rome"} # type: ignore
+person: dict[str, str | int] = {"first_name": "Mario", "last_name": "Rossi", "age": 30, "city": "Rome"}
 for key, value in person.items():
     print(f"{key}: {value}")
 
@@ -122,7 +122,7 @@ for word, definition in glossary.items():
     print(f"  {definition}")
 
 # 6-7. People
-people: list[dict[str, str or int]] = [] # type: ignore
+people: list[dict[str, str | int]] = []
 people.append(person)
 people.append({
     "first_name": "Matteo",
@@ -176,7 +176,7 @@ for name, numbers in favorite_numbers.items():
         print(f"  {number}")
 
 # 6-11. Cities
-cities: dict[str, dict[str, str or int]] = { # type: ignore  
+cities: dict[str, dict[str, str | int]] = {
     "Rome": {
         "country": "Italy",
         "population": 2873000,
@@ -208,4 +208,4 @@ cities["London"]["landmark"] = "Big Ben"
 for city, info in cities.items():
     print(f"\n{city}:")
     for key, value in info.items():
-        print(f"  {key}: {value}")
+        print(f"  {key}: {value}")        
